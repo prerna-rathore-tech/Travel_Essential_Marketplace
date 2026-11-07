@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | TravelMart</title>
+    <link rel="stylesheet" href="../css_files/style.css">
+    <link rel="stylesheet" href="../css_files/shop.css">
+    <link rel="stylesheet" href="../css_files/categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="../icons/logo.png" alt="TravelMart Logo">
+            <span>Travel<strong>Mart</strong></span>
+        </a>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="categories.html" class="active-link">Categories</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="shop.html"><i class="ri-search-line"></i></a>
+            <a href="auth.html"><i class="ri-account-circle-fill"></i></a>
+            <a href="cart.html" class="cart-link" aria-label="Cart">
+                <i class="ri-shopping-bag-line"></i>
+                <span class="cart-count" data-cart-count hidden>0</span>
+            </a>
+            <i class="ri-menu-fill" id="menu-btn"></i>
+        </div>
+    </header>
+
+    <section class="shop-hero">
+        <h1>Explore Categories</h1>
+        <p>Home / Categories</p>
+    </section>
+
+    <section class="categories-section">
+        <div class="section-heading">
+            <h2>Shop by Category</h2>
+            <p>Find everything you need for your next adventure.</p>
+        </div>
+
+        <!-- cards categories.js se PRODUCTS data se ban rahe hain -->
+        <div class="category-grid" id="category-grid"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box footer-about">
+                <a href="index.html" class="footer-logo">Travel<span>Mart</span></a>
+                <p>Everything you need for your next adventure. Discover travel essentials and make every journey comfortable and memorable.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Get In Touch</h3>
+                <p><i class="ri-mail-line"></i> support@travelmart.com</p>
+                <p><i class="ri-phone-line"></i> +91 98765 43210</p>
+                <p><i class="ri-map-pin-line"></i> India</p>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 TravelMart. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js_files/products.js"></script>
+    <script src="../js_files/cart.js"></script>
+    <script src="../js_files/categories.js"></script>
+    <script src="../js_files/script.js"></script>
+</body>
+</html>

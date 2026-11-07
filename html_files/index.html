@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Essentials Marketplace</title>
+    <link rel="stylesheet" href="../css_files/style.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    
+    <!-- font style -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar section start -->
+    <header>
+       <a href="index.html" class="logo">
+        <img src="../icons/logo.png" alt="TravelMart Logo">
+        <span>Travel<strong>Mart</strong></span>
+    </a>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+             <li><a href="shop.html">Shop</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>  
+        </ul>
+
+        <div class="social-icons">
+            <a href="shop.html"><i class="ri-search-line"></i></a>
+            <a href="auth.html"><i class="ri-account-circle-fill"></i></a>
+            <a href="cart.html" class="cart-link" aria-label="Cart">
+                <i class="ri-shopping-bag-line"></i>
+                <span class="cart-count" data-cart-count hidden>0</span>
+            </a>
+            <i class="ri-menu-fill" id="menu-btn"></i>
+        </div>
+    </header>
+<!-- Navbar section end -->
+
+<!-- Hero section start -->
+<section class="home">
+    <div class="hero-slider">
+
+        <!-- Slide 1-->
+        <div class="slide active">
+            <div class="home-text">
+                <h5>YOUR TRAVEL COMPANION</h5>
+                <h1>Pack Smart. <br> Travel Better.</h1>
+                <p>Find the perfect essentials for every adventure.</p>
+                <a href="shop.html" class="btn">Explore <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="home-image">
+                <div class="shape-bg"></div>
+                <img src="../images/home-img/home_img.png" alt="Travel luggage">
+            </div>
+        </div>
+
+         <!-- Slide 2-->
+         <div class="slide slide-2">
+            <div class="home-text">
+                <h5>NEW ARRIVALS 2026</h5>
+                <h1>Explore More. <br> Worry Less.</h1>
+                <p>Premium lightweight travel gear designed for every journey.</p>
+                <a href="shop.html" class="btn">Shop Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+    <!-- Navigation Dots -->
+    <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<!-- Hero section end -->
+
+<!-- Feature section start -->
+<section class="features">
+
+  <div class="feature-box">
+    <div class="icon">
+        <img src="../icons/shipped.png" alt="Free Delivery">
+    </div>
+    <h3>Free Home Delivery</h3>
+    <div class="line"></div>
+    <p>Fast and reliable doorstep delivery on all your travel essentials.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">
+        <img src="../icons/online-support (1).png" alt="24/7 Support">
+    </div>
+    <h3>24 x 7 Support</h3>
+    <div class="line"></div>
+    <p>We are always here to help you before, during, and after your trip.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">
+        <img src="../icons/payment-security.png" alt="Secure Payment">
+    </div>
+    <h3>Secure Payment</h3>
+    <div class="line"></div>
+    <p>100% safe, trusted, and verified online payment gateways.</p>
+  </div>
+
+</section>
+<!-- Feature section end -->
+ 
+<!-- categories section start -->
+<section class="categories">
+    <div class="category-heading">
+        <div>
+            <h2>Shop by Category</h2>
+        </div>
+
+      <div class="category-buttons">
+        <button id="prev-btn" aria-label="Previous Categories">
+            <i class="ri-arrow-left-line"></i>
+        </button>
+
+         <button id="next-btn" aria-label="Next Categories">
+            <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="category-slider" id="category-slider">
+
+        <div class="category-card">
+            <img src="../images/categories-img/bagpack.jpg" alt="Backpack">
+            <h3>Backpacks</h3>
+            <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="category-card">
+            <img src="../images/categories-img/Luggage.webp" alt="luggege">
+            <h3>Luggage</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="category-card">
+            <img src="../images/categories-img/Travel Organizers.webp" alt="organizer">
+            <h3>Organizer</h3>
+            <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+       <div class="category-card">
+            <img src="../images/categories-img/Pillows.webp" alt="pillow">
+            <h3>Pillows</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+       </div>
+
+        <div class="category-card">
+            <img src="../images/categories-img/bottle.webp" alt="bottle">
+            <h3>Bottles</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+         </div>
+
+          <div class="category-card">
+            <img src="../images/categories-img/cap.webp" alt="cap">
+            <h3>Cap</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+         </div>
+
+         <div class="category-card">
+            <img src="../images/categories-img/gogles.jpeg" alt="Goggles">
+            <h3>Goggles</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+         </div>
+
+          <div class="category-card">
+            <img src="../images/categories-img/jacket.jpg" alt="jacket">
+            <h3>Winter Jacket</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+         </div>
+
+         <div class="category-card">
+            <img src="../images/categories-img/camera_cate.jpg" alt="camera">
+            <h3>Camera</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+         </div>
+
+         <div class="category-card">
+            <img src="../images/categories-img/powerbank2.jpg" alt="powerbank">
+            <h3>Powerbank</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+         </div>
+
+         <div class="category-card">
+            <img src="../images/categories-img/tant2.jpg" alt="tant">
+            <h3>Tent / Camping Tent</h3>
+            <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+         </div>
+
+          <div class="category-card">
+            <img src="../images/categories-img/Waist.webp" alt="Waist & Sling Packs">
+            <h3>Waist & Sling Packs</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+         </div>
+
+    </div>
+</section>
+<!-- categories section end -->
+
+<!-- Discount banner section start -->
+
+<div class="discount-banner">
+    <div class="discount-content">
+        <span class="discount-tag">Get 25% off</span>
+        <h2>Make your next trip with great discount.</h2>
+        <a href="shop.html" class="discount-btn">Explore Deals</a>
+    </div>
+</div>
+
+<!-- Discount banner section end -->
+
+<!-- Best seller section start -->
+
+<section class="best-seller">
+    <div class="seller-heading">
+        <div>
+            <h2>Best Sellers</h2>
+            <p>Our most popular travel Essential</p>
+        </div>
+
+        <div class="seller-buttons">
+            <button id="prev-move" aria-label="Previous Sellers">
+                 <i class="ri-arrow-left-line"></i>
+            </button>
+
+             <button id="next-move" aria-label="Next Sellers">
+                 <i class="ri-arrow-right-line"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="seller-slider" id="seller-slider">
+
+        <div class="seller-card">
+            <img src="../images/best-seller-img/powerbank.jpg">
+            <h3>Powerbank</h3>
+              <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+         <div class="seller-card">
+            <img src="../images/best-seller-img/pakingCubes.png">
+            <h3>Packing Cubes</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+         <div class="seller-card">
+            <img src="../images/best-seller-img/campingTant.avif">
+            <h3>Camping Tant</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+        </div>
+        
+         <div class="seller-card">
+            <img src="../images/best-seller-img/camera.png">
+            <h3>Camera</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+         <div class="seller-card">
+            <img src="../images/best-seller-img/suitcase.png">
+            <h3>Suitcases</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+         <div class="seller-card">
+            <img src="../images/best-seller-img/Waist & Sling Packs.jpg">
+            <h3>Waist & Sling Packs</h3>
+             <a href="../html_files/shop.html" class="explore-btn">Explore <i class="ri-arrow-right-line"></i></a>
+        </div>
+    </div>
+</section>
+ <!-- Best seller section end -->
+
+ <!-- footer section start  -->
+
+ <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box footer-about">
+            <a href="#" class="footer-logo">
+                Travel<span>Mart</span>
+            </a>
+
+            <p>
+                Everything you need for your next adventure.
+                Discover travel essentials and make every journey
+                comfortable and memorable.
+            </p>
+        </div>
+
+        <!-- links -->
+         <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-box">
+            <h3>Customer Support</h3>
+            <ul>
+                <li><a href="#">Contact</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-box">
+            <h3>Get In Touch</h3>
+
+           <p>
+                <i class="ri-mail-line"></i>
+                support@travelmart.com
+            </p>
+
+            <p>
+                <i class="ri-phone-line"></i>
+                +91 98765 43210
+            </p>
+
+            <p>
+                <i class="ri-map-pin-line"></i>
+                India
+            </p>
+         </div>
+
+        <!-- bottom -->
+         <div class="footer-bottom">
+            <p>@copy; 2026 TravelMart. All rights reserved</p>
+         </div>
+         
+    </div>
+ </footer>
+  <!-- footer section end  -->
+   <script src="../js_files/script.js"></script>
+</body>
+</html>

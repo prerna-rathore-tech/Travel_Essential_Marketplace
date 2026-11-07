@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #f1eef8;
+    color:#252b3a;
+}
+
+.account-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width:1150;
+    min-height: 600px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(30, 30, 50, 0.12);
+}
+
+.travel-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:35px 7%;
+    color:white;
+    background:linear-gradient(rgba(20, 30, 45, 0.2),rgba(20, 30, 45, 0.8)),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85")
+        center / cover no-repeat;
+}
+.logo{
+    color:#fff;
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+}
+.travel-content{
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+.travel-content p{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.travel-content span {
+    display: block;
+    color: #fff;
+    font-size: clamp(32px, 3.5vw, 45px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+.discription {
+    max-width: 380px;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+    font-size: 13px;
+    line-height: 1.8;
+}
+.travel-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-bottom: 10px;
+}
+.travel-benefits div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+.travel-benefits i {
+    color: #fff;
+    font-size: 23px;
+}
+
+/* right part */
+.form-panel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 9% 40px;
+    background:
+        radial-gradient(circle at top right, #eee8ff, transparent 40%),
+        #fdfcff;
+}
+.back-home {
+    position: absolute;
+    top: 10px;
+    right: 1%;
+    height:5px;
+    padding:20px;
+    width:auto;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+.back-home:hover {
+    color:burlywood;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 350px;
+}
+
+.form-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    border-radius: 14px;
+    background: #111;
+    color: #fff;
+    font-size: 23px;
+}
+.form-content h2 {
+    margin-bottom: 9px;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+}
+
+.subtitle {
+    margin-bottom: 23px;
+    color: #81879a;
+    font-size: 15px;
+    line-height: 1.8;
+}
+#login-form > label {
+    display: block;
+    margin: 15px 0 8px;
+    color: #343c4e;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Input Fields */
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 0 13px;
+    border: 1px solid #deddeb;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.input-box:focus-within {
+    border-color: #111;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-box i {
+      color: #111;
+    font-size: 18px;
+}
+
+.input-box input {
+    width: 100%;
+    min-width: 0;
+    padding: 13px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #252b3a;
+    font-size: 14px;
+}
+
+.input-box input::placeholder {
+    color: #a0a5b4;
+}
+
+/* Remember Me and Forgot Password */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin: 17px 0 22px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #555d70;
+    font-size: 15px;
+    cursor: pointer;
+}
+.remember input {
+    accent-color: #111;
+}
+
+.forgot {
+    color: #a97900;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Login Button */
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 5px 9px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: #111;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit-btn i {
+    font-size: 25px;
+    transition: transform 0.25s;
+}
+
+.submit-btn:hover {
+  background: #fff;
+    color: #111;
+    border-color: #111;
+    transform: translateY(-2px);
+}
+
+.submit-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* Register Link */
+.switch-text {
+    margin-top: 24px;
+    color: #111;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.switch-text a {
+    margin-left: 5px;
+    color: #111;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.switch-text a:hover,
+.forgot:hover {
+    color: #252b3a;
+}
+
+/* REGISTER PAGE CSS */
+#register-form{
+    width: 100%;
+    animation: formFade 0.3s ease;
+}
+#register-form.hidden {
+    display: none;
+}
+
+#register-form .form-icon {
+      background: #111;
+    color: #fff;
+}
+
+#register-form h2 {
+    margin-bottom: 9px;
+}
+
+#register-form .subtitle {
+    margin-bottom: 20px;
+}
+
+#register-form > label {
+    display: block;
+    margin: 13px 0 7px;
+    color: #343c4e;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+#register-form .input-box {
+    width: 100%;
+}
+
+#register-form .input-box input {
+    width: 100%;
+    padding: 12px 0;
+}
+
+#register-form .submit-btn {
+    margin-top: 24px;
+}
+
+#register-form .switch-text {
+    margin-top: 20px;
+}
+.hidden {
+    display: none !important;
+}
+@keyframes formFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Responsive Design */
+@media (max-width: 800px) {
+    body {
+        padding: 18px;
+    }
+
+    .account-page {
+        max-width: 520px;
+        grid-template-columns: 1fr;
+    }
+
+    .travel-panel {
+        min-height: 350px;
+        padding: 28px 7%;
+    }
+
+    .travel-content {
+        margin-top: 45px;
+    }
+
+    .travel-content span {
+        font-size: 35px;
+    }
+
+    .form-panel {
+        min-height: 500px;
+        padding: 75px 8% 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .account-page {
+        border-radius: 0;
+    }
+
+    .travel-panel {
+        min-height: 320px;
+        padding: 25px 6%;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .travel-content span {
+        font-size: 30px;
+    }
+
+    .travel-benefits {
+        gap: 14px;
+    }
+
+    .form-panel {
+        min-height: 480px;
+        padding: 70px 6% 35px;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | TravelMart</title>
+    <link rel="stylesheet" href="../css_files/style.css">
+    <link rel="stylesheet" href="../css_files/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="../icons/logo.png" alt="TravelMart Logo">
+            <span>Travel<strong>Mart</strong></span>
+        </a>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="shop.html"><i class="ri-search-line"></i></a>
+            <a href="auth.html"><i class="ri-account-circle-fill"></i></a>
+            <a href="cart.html" class="cart-link" aria-label="Cart">
+                <i class="ri-shopping-bag-line"></i>
+                <span class="cart-count" data-cart-count hidden>0</span>
+            </a>
+            <i class="ri-menu-fill" id="menu-btn"></i>
+        </div>
+    </header>
+
+    <section class="shop-hero">
+        <h1>Your Cart</h1>
+        <p>Home / Cart</p>
+    </section>
+
+    <section class="cart-page">
+        <p id="cart-empty" class="empty-state">Your cart is empty. <a href="shop.html">Continue shopping</a></p>
+        <div id="cart-list" class="cart-list"></div>
+        <!-- <div id="cart-summary" class="cart-summary" hidden>
+            <p>Total: <strong id="cart-total">₹0</strong></p>
+            <a href="shop.html" class="discount-btn">Continue Shopping</a>
+        </div> -->
+
+        <div id="cart-summary" class="cart-summary" hidden>
+    <p>Total: <strong id="cart-total">₹0</strong></p>
+    <a href="shop.html" class="discount-btn">Continue Shopping</a>
+    <button type="button" id="place-order-btn" class="add-cart-btn">Place Order <i class="ri-arrow-right-line"></i></button>
+</div>
+
+<form id="checkout-form" class="checkout-form" hidden novalidate>
+    <h2>Delivery Details</h2>
+
+    <label for="co-name">Full Name</label>
+    <input type="text" id="co-name" placeholder="Enter your full name">
+
+    <label for="co-phone">Phone Number</label>
+    <input type="tel" id="co-phone" placeholder="10 digit mobile number" maxlength="10">
+
+    <label for="co-address">Address</label>
+    <textarea id="co-address" rows="3" placeholder="House no, street, area"></textarea>
+
+    <div class="checkout-row">
+        <div>
+            <label for="co-city">City</label>
+            <input type="text" id="co-city" placeholder="City">
+        </div>
+        <div>
+            <label for="co-pin">Pincode</label>
+            <input type="text" id="co-pin" placeholder="6 digit pincode" maxlength="6">
+        </div>
+    </div>
+
+    <label for="co-payment">Payment Method</label>
+    <select id="co-payment">
+        <option value="Cash on Delivery">Cash on Delivery</option>
+        <option value="UPI">UPI</option>
+        <option value="Card">Card</option>
+    </select>
+
+    <p class="checkout-status" id="checkout-status" role="alert"></p>
+
+    <button type="submit" class="add-cart-btn">Confirm Order</button>
+</form>
+
+<div id="order-success" class="order-success" hidden>
+    <i class="ri-checkbox-circle-line"></i>
+    <h2>Order placed!</h2>
+    <p>Your order ID is <strong id="order-id"></strong>. Total paid on delivery or online: <strong id="order-total"></strong>.</p>
+    <a href="shop.html" class="discount-btn">Continue Shopping</a>
+</div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box footer-about">
+                <a href="index.html" class="footer-logo">Travel<span>Mart</span></a>
+                <p>Everything you need for your next adventure.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Get In Touch</h3>
+                <p><i class="ri-mail-line"></i> support@travelmart.com</p>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 TravelMart. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js_files/products.js"></script>
+    <script src="../js_files/cart.js"></script>
+    <script src="../js_files/cart-page.js"></script>
+    <script src="../js_files/script.js"></script>
+</body>
+</html>

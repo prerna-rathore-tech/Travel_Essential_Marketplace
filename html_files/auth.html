@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register Page</title>
+    <link rel="stylesheet" href="../css_files/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+<body>
+
+    <main class="account-page">
+        <div class="travel-panel">
+
+            <a href="index.html" class="logo">TravelMart</a>
+
+            <div class="travel-content">
+                <p>YOUR NEXT ADVANTURE</p>
+                <span>START HERE.</span>
+            </div>
+
+            <p class = "discription">
+                 Discover amazing destinations and find everything
+                    you need for your next journey.
+            </p>
+
+                <div class="travel-benefits">
+                    <div>
+                        <i class="ri-suitcase-line"></i>
+                        <span>Travel<br>Essentials</span>
+                    </div>
+
+                    <div>
+                        <i class="ri-shield-check-line"></i>
+                        <span>Secure<br>Shopping</span>
+                    </div>
+
+                    <div>
+                        <i class="ri-customer-service-2-line"></i>
+                        <span>24/7<br>Support</span>
+                    </div>
+                </div>
+            </div>
+
+        <section class="form-panel">
+            <a href="index.html" class="back-home">  <i class="ri-arrow-left-line"></i> Back To Home</a>
+
+            <div class="form-content">
+
+                <form id="login-form">
+
+                    <div class="form-icon">
+                          <i class="ri-user-line"></i>
+                    </div>
+
+                    <h2>Welcome Back!</h2>
+
+                    <p class="subtitle">Login to continue your journey with TravelMart.</p>
+
+                    <label for="login-email">Email Address</label>
+
+                    <div class="input-box">
+
+                         <i class="ri-mail-line"></i>
+                         <input type="email" id="login-email" placeholder="Enter Your Email" required>
+
+                    </div>
+
+                    <label for="login-password">Password</label>
+
+                     <div class="input-box">
+                           <i class="ri-lock-line"></i>
+                           <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+
+                     <div class="form-options">
+
+                        <label class="remember">
+                            <input type="checkbox">Remember me
+                        </label>
+
+                        
+                    </div>
+
+                     <button type="submit" class="submit-btn">Login<i class="ri-arrow-right-line"></i></button>
+
+                      <p class="switch-text">Don't have an account?<a href="#" id="show-register">Register Now</a></p>
+                </form>
+
+                <!-- REGISTER FORM -->
+                 <form id="register-form" class="hidden">
+
+                    <div class="form-icon">
+                        <i class="ri-user-add-line"></i>
+                    </div>
+
+                    <h2>Create Account</h2>
+
+                     <p class="subtitle">
+                        Join TravelMart for your next adventure.
+                    </p>
+
+                     <label for="register-name">Full Name</label>
+
+                     <div class="input-box">
+                        <i class="ri-user-line"></i>
+
+                        <input type="text" id="register-name" placeholder="Enter your full name" required>
+                    </div>
+
+                       <label for="register-email">Email Address</label>
+
+                       <div class="input-box">
+                        <i class="ri-mail-line"></i>
+
+                        <input
+                            type="email"
+                            id="register-email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+                     <label for="register-password">Create Password</label>
+
+                    <div class="input-box">
+                        <i class="ri-lock-line"></i>
+
+                        <input
+                            type="password"
+                            id="register-password"
+                            placeholder="Create a password"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Create Account
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+
+                    <p class="switch-text">
+                        Already have an account?
+                        <a href="#" id="show-login">Login</a>
+                    </p>
+                 </form>
+            </div>
+        </section>
+    </main>
+    <script src="../js_files/auth.js"></script>
+</body>
+</html>
